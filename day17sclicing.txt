@@ -1,0 +1,91 @@
+1. Write a NumPy program to create an array of 10 zeros, 10 ones, and 10 fives.
+
+
+import numpy as np                                    #importing numpy 
+
+zeros = np.zeros(10)                                  #Creating arrays of 10 zeros, ones, fives
+ones = np.ones(10)
+fives = np.ones(10) * 5
+
+result_array = np.concatenate([zeros, ones, fives])   #add the arrays
+
+print("Array of 10 zeros:")                           #printing 10 zerO
+print(zeros)
+print("Array of 10 ones:")                            #printing 10 ones
+print(ones)
+print("Array of 10 fives:")                           #printing 10 fives 
+print(fives)
+print("Resulting array:")                             
+print(result_array)
+
+OUTPUT
+
+Array of 10 zeros:
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Array of 10 ones:
+[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Array of 10 fives:
+[5. 5. 5. 5. 5. 5. 5. 5. 5. 5.]
+Resulting array:
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 5. 5. 5. 5.
+ 5. 5. 5. 5. 5. 5.]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a NumPy program to create a 3x3 matrix with values ranging from 2 to 10.
+
+
+import numpy as np                                   #importing numpy 
+                  
+values = np.arange(2, 11)                            #Create an array with values ranging from 2 to 10
+
+matrix = values.reshape(3, 3)                        #Reshape the array into a 3x3 matrix
+
+print("3x3 Matrix with values ranging from 2 to 10:") 
+print(matrix)
+
+OUTPUT
+
+3x3 Matrix with values ranging from 2 to 10:
+[[ 2  3  4]
+ [ 5  6  7]
+ [ 8  9 10]]
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a NumPy program to create an array with values ranging from 12 to 38.
+
+import numpy as np                                 #importing numpy as np
+
+values=np.arange(12,39)                            #Create an array with values ranging from 12 to 38
+
+arr=np.array(values)                               #Converting the values in array
+print(arr)                                         #printing the array
+
+OUTPUT
+
+[12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Write a NumPy program to convert a list and tuple into arrays. Input: my_list = [1, 2, 3, 4, 5, 6, 7, 8] 
+   Input: my_tuple = ([8, 4, 6], [1, 2, 3])
+
+
+import numpy as np                               #importing numpy as np
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]               #Taking my_list as an variable and there values in list
+my_tuple = ([8, 4, 6], [1, 2, 3])                #Taking my_tuple as an variable and there values in tuple
+
+arr1=np.array(my_list)                           #Converting my_list to array as arr1
+arr2=np.array(my_tuple)                          #Converting my_tuple to array as arr2
+print(arr1)                                      #printing arr1
+print(arr2)                                      #printing arr2
+
+OUTPUT
+
+[1 2 3 4 5 6 7 8]
+[[8 4 6]
+ [1 2 3]]
+
+
